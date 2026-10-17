@@ -1,0 +1,62 @@
+{
+  "claude-haiku-4-5": {
+    "n_items": 270,
+    "n_answered": 270,
+    "translate_bn_en_chrfpp": 62.63,
+    "translate_en_bn_chrfpp": 48.04,
+    "en_bn_bengali_script_share": 1.0,
+    "nli_accuracy": 0.7444,
+    "nli_unparsed": 0,
+    "numerals_exact_strict": 0.6,
+    "numerals_exact_digit_normalised": 0.6,
+    "latency_median_s": 0.65,
+    "input_tokens": 28055,
+    "output_tokens": 10272,
+    "errors": 0
+  },
+  "claude-opus-5-5": {
+    "n_items": 270,
+    "n_answered": 270,
+    "translate_bn_en_chrfpp": 75.4,
+    "translate_en_bn_chrfpp": 45.39,
+    "en_bn_bengali_script_share": 0.9953,
+    "nli_accuracy": 0.9,
+    "nli_unparsed": 0,
+    "numerals_exact_strict": 1.0,
+    "numerals_exact_digit_normalised": 1.0,
+    "latency_median_s": 2.24,
+    "input_tokens": 33414,
+    "output_tokens": 42221,
+    "errors": 0
+  },
+  "claude-sonnet-5": {
+    "n_items": 270,
+    "n_answered": 270,
+    "translate_bn_en_chrfpp": 64.88,
+    "translate_en_bn_chrfpp": 47.42,
+    "en_bn_bengali_script_share": 0.9893,
+    "nli_accuracy": 0.7778,
+    "nli_unparsed": 0,
+    "numerals_exact_strict": 1.0,
+    "numerals_exact_digit_normalised": 1.0,
+    "latency_median_s": 1.19,
+    "input_tokens": 32874,
+    "output_tokens": 19152,
+    "errors": 0
+  },
+  "gpt-6-sol": {
+    "n_items": 270,
+    "n_answered": 270,
+    "translate_bn_en_chrfpp": 61.98,
+    "translate_en_bn_chrfpp": 42.1,
+    "en_bn_bengali_script_share": 1.0,
+    "nli_accuracy": 0.7778,
+    "nli_unparsed": 0,
+    "numerals_exact_strict": 1.0,
+    "numerals_exact_digit_normalised": 1.0,
+    "latency_median_s": 1.56,
+    "input_tokens": 17141,
+    "output_tokens": 27818,
+    "errors": 0
+  }
+}

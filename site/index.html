@@ -1,0 +1,18 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>bangla-llm-eval leaderboard</title>
+<style>
+body{font:16px/1.5 system-ui,-apple-system,Segoe UI,Roboto,sans-serif;margin:0;background:#0b1020;color:#e6e9f2}
+main{max-width:980px;margin:0 auto;padding:40px 20px}
+h1{font-size:28px;margin:0 0 6px}p{color:#aab3c8}
+table{width:100%;border-collapse:collapse;margin:24px 0;font-variant-numeric:tabular-nums}
+th,td{padding:10px 12px;border-bottom:1px solid #222a40;text-align:right}th:first-child,td:first-child{text-align:left}
+th{color:#8fd3c7;font-weight:600;font-size:14px}tr:hover td{background:#121a30}
+a{color:#8fd3c7}code{background:#151d33;padding:1px 5px;border-radius:4px}
+</style></head><body><main>
+<h1>bangla-llm-eval</h1>
+<p>A small, fixed, reproducible Bangla (Bengali) evaluation of large language models: translation both ways, natural-language inference, and Bengali-digit numerals. 270 items, one live run per model on 2026-10-17. Every number below is recomputed in CI from the committed raw model outputs.</p>
+<table><thead><tr><th>Model</th><th>BN→EN chrF++</th><th>EN→BN chrF++</th><th>NLI acc.</th><th>Numerals exact</th><th>Median latency (s)</th><th>Cost (USD)</th></tr></thead><tbody><tr><td>Claude Opus 5.5</td><td>75.40</td><td>45.39</td><td>90.0%</td><td>100.0%</td><td>2.24</td><td>0.978</td></tr><tr><td>Claude Sonnet 5</td><td>64.88</td><td>47.42</td><td>77.8%</td><td>100.0%</td><td>1.19</td><td>0.257</td></tr><tr><td>GPT-6 Sol</td><td>61.98</td><td>42.10</td><td>77.8%</td><td>100.0%</td><td>1.56</td><td>0.312</td></tr><tr><td>Claude Haiku 4.5</td><td>62.63</td><td>48.04</td><td>74.4%</td><td>60.0%</td><td>0.65</td><td>0.079</td></tr></tbody></table>
+<p>chrF++ is corpus-level (sacrebleu, word order 2) on 60 FLORES-200 devtest sentences per direction. NLI accuracy is on 90 balanced items from the Bengali XNLI test split. Numerals is exact match on 60 items (30 arithmetic in Bengali digits, 30 Bengali-to-ASCII digit transcriptions). Cost is at list prices from the token counts the providers returned. Rows are ordered by the sum of the four quality scores.</p>
+<p>Limits: one run per model, small per-task samples (differences of a few points are within noise), and FLORES-200 is public, so contamination cannot be ruled out. Details, raw outputs and the one-command repro are in the <a href="https://github.com/muhib-karim/bangla-llm-eval">repository</a>.</p>
+</main></body></html>
