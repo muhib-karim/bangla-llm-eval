@@ -1,0 +1,13 @@
+cff-version: 1.2.0
+message: "If you use this evaluation suite, please cite it as below."
+title: "bangla-llm-eval: a small reproducible Bangla evaluation for large language models"
+type: software
+authors:
+  - family-names: Karim
+    given-names: Muhib
+repository-code: "https://github.com/muhib-karim/bangla-llm-eval"
+url: "https://muhib-karim.github.io/bangla-llm-eval/"
+license: MIT
+version: 1.0.0
+date-released: 2026-10-17
+keywords: [bangla, bengali, llm-evaluation, low-resource, machine-translation, nli]
