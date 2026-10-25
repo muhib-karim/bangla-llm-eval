@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="640" viewBox="0 0 1280 640">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#0B1020"/><stop offset="1" stop-color="#141A36"/></linearGradient>
+    <linearGradient id="g" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#059669"/><stop offset="1" stop-color="#84CC16"/></linearGradient>
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse"><path d="M40 0H0V40" fill="none" stroke="#ffffff" stroke-opacity="0.04"/></pattern>
+  </defs>
+  <rect width="1280" height="640" fill="url(#bg)"/><rect width="1280" height="640" fill="url(#grid)"/>
+  <circle cx="1130" cy="100" r="270" fill="#059669" fill-opacity="0.12"/><circle cx="1190" cy="580" r="210" fill="#84CC16" fill-opacity="0.12"/>
+  <rect x="0" y="0" width="1280" height="6" fill="url(#g)"/>
+  <g transform="translate(110,190)">
+    <rect width="200" height="200" rx="46" fill="url(#g)"/>
+    <rect x="3" y="3" width="194" height="194" rx="43" fill="none" stroke="#fff" stroke-opacity="0.18" stroke-width="2"/>
+    <text x="100" y="128" text-anchor="middle" fill="#fff" font-family="Inter, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="88" font-weight="800" letter-spacing="-2">BL</text>
+  </g>
+  <g font-family="Inter, 'Segoe UI', Helvetica, Arial, sans-serif">
+    <text x="362" y="220" fill="#059669" font-size="24" font-weight="700" letter-spacing="4" style="filter:brightness(1.5)">EVALUATION · বাংলা</text>
+    <text x="358" y="300" fill="#FFFFFF" font-size="72" font-weight="800" letter-spacing="-1">bangla-llm-eval</text>
+    <text x="360" y="360" fill="#C9D1F5" font-size="30">A small, reproducible Bangla evaluation of LLMs</text><text x="360" y="400" fill="#C9D1F5" font-size="30">with a live leaderboard</text>
+    <g transform="translate(360,470)"><rect width="166" height="42" rx="21" fill="#059669" fill-opacity="0.16" stroke="#059669" stroke-opacity="0.55"/><text x="83.0" y="28" text-anchor="middle" fill="#E6E9FF" font-size="19" font-weight="600">Translation</text></g><g transform="translate(538,470)"><rect width="74" height="42" rx="21" fill="#059669" fill-opacity="0.16" stroke="#059669" stroke-opacity="0.55"/><text x="37.0" y="28" text-anchor="middle" fill="#E6E9FF" font-size="19" font-weight="600">NLI</text></g><g transform="translate(624,470)"><rect width="132" height="42" rx="21" fill="#059669" fill-opacity="0.16" stroke="#059669" stroke-opacity="0.55"/><text x="66.0" y="28" text-anchor="middle" fill="#E6E9FF" font-size="19" font-weight="600">Numerals</text></g><g transform="translate(768,470)"><rect width="109" height="42" rx="21" fill="#059669" fill-opacity="0.16" stroke="#059669" stroke-opacity="0.55"/><text x="54.5" y="28" text-anchor="middle" fill="#E6E9FF" font-size="19" font-weight="600">chrF++</text></g><g transform="translate(889,470)"><rect width="166" height="42" rx="21" fill="#059669" fill-opacity="0.16" stroke="#059669" stroke-opacity="0.55"/><text x="83.0" y="28" text-anchor="middle" fill="#E6E9FF" font-size="19" font-weight="600">Leaderboard</text></g>
+  </g>
+  <text x="110" y="592" fill="#6B7392" font-family="ui-monospace, Menlo, Consolas, monospace" font-size="21">github.com/muhib-karim/bangla-llm-eval</text>
+  <text x="1170" y="592" text-anchor="end" fill="#6B7392" font-family="Inter, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="21" font-weight="600">Muhib Karim</text>
+</svg>
