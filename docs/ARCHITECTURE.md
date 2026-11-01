@@ -32,7 +32,7 @@ build_items.py ─► items.jsonl ─┐
 
 ## CI and deploy
 
-- `.github/workflows/ci.yml` installs `requirements.txt` plus pytest on Python 3.12, runs `make test`, then `make repro` to recompute every score from the committed raw outputs.
+- `.github/workflows/ci.yml` installs `requirements.txt` plus pytest on Python 3.12, runs `make test`, then `make repro` to recompute every score from the committed raw outputs, and fails if `results/` or `site/index.html` differ from what is committed.
 - `.github/workflows/pages.yml` runs on pushes to `main`: it runs `make repro` and publishes the rendered page to GitHub Pages (the leaderboard linked from the README).
 
 ## Adding a model
