@@ -1,3 +1,4 @@
+import hashlib
 import json
 from pathlib import Path
 
@@ -43,3 +44,5 @@ def test_item_set_is_the_frozen_one():
     for i in items:
         tasks[i["task"]] = tasks.get(i["task"], 0) + 1
     assert tasks == {"translate_bn_en": 60, "translate_en_bn": 60, "nli": 90, "bangla_numerals": 60}
+    digest = hashlib.sha256(json.dumps(items, sort_keys=True, ensure_ascii=False).encode()).hexdigest()
+    assert digest == "ab9120e59d72844ea98d6c003b6c08a520b77311e60b6189ed98461d81a60f45"
