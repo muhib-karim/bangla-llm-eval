@@ -1,0 +1,12 @@
+version: 2
+updates:
+  # Workflows pin actions to commit SHAs; Dependabot proposes the bumps (and keeps the version comments in step).
+  - package-ecosystem: github-actions
+    directory: /
+    schedule:
+      interval: weekly
+  # requirements.txt and requirements-dev.txt. CI fails a bump that changes any committed score.
+  - package-ecosystem: pip
+    directory: /
+    schedule:
+      interval: weekly
