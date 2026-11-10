@@ -1,0 +1,27 @@
+# Tool configuration only. The suite is a handful of scripts run from a checkout, not an installable package.
+
+[tool.ruff]
+line-length = 120
+target-version = "py311"
+# Measured results and raw outputs are never linted or reformatted.
+extend-exclude = ["results", "runs", "site"]
+
+[tool.ruff.lint]
+select = ["E", "F", "W", "I", "B", "C4", "UP", "SIM", "PTH", "ASYNC", "BLE", "RUF"]
+# The frozen arithmetic prompts use the multiplication sign.
+allowed-confusables = ["×"]
+
+[tool.ruff.format]
+# ruff formats Markdown by default; the README and results tables must stay byte-for-byte as generated.
+exclude = ["*.md"]
+
+[tool.mypy]
+python_version = "3.11"
+strict = true
+files = ["score.py", "run_eval.py", "report.py", "build_items.py", "tests"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["."]
+addopts = "-ra --strict-markers --strict-config"
+xfail_strict = true

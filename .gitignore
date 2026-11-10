@@ -1,5 +1,9 @@
 data/
 __pycache__/
 .pytest_cache/
+.ruff_cache/
+.mypy_cache/
+.venv/
 runs/*.log
+runs/*.tmp
 run1.sh
